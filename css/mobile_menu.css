@@ -1,0 +1,30 @@
+@media only screen and (max-width: 800px) {
+
+.submenu a:hover, .submenu a:active, .submenu a:focus {
+background-color: none;
+color:red;
+}
+
+.mainmenu li:hover .submenu, .mainmenu li:active .submenu, .mainmenu li:focus .submenu {
+display: block;
+max-height: 800px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+transition-duration: 3s;
+
+
+}
+
+.mainmenu li:hover .ikon{
+display:none;
+
+}
+
+.mainmenu a:hover, .mainmenu a:active, .mainmenu a:focus {
+  background-color: none;
+  color:red;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+ 
+}
+
+
+}
