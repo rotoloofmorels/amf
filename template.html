@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<!-- Resources, initializations -->
+
+<head>
+
+    <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+    </noscript>
+    <style>
+        p {
+            font-family: 'metropolis-regular', sans-serif;
+        }
+    </style>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Welcome to Ashwa Mobility!</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles_menu.css">
+    <!-- for horizontal menu-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- slick styling-->
+    <style>
+      
+      /* SCROLL BAR */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: black;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: red;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: red;
+        }
+
+
+      /* SCROLL BAR */
+    
+    
+        body {
+            width: 100%;
+        }
+
+
+        h1 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            font-family: 'metropolis-regular', sans-serif;
+        }
+
+
+        .add {
+            color: red;
+        }
+
+        .li-options {
+
+            display: inline;
+            padding: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            position: relative;
+            height: 70px;
+        }
+
+
+        .sample {
+            cursor: pointer;
+            color: red;
+            font-family: "metropolis-regular", sans-serif;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4rem;
+            color: #ffffff;
+        }
+
+
+        .sample:hover {
+            color: red;
+        }
+
+        .sample-style {
+            display: inline;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.0);
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            position: relative;
+            border-right: 1px solid white;
+            height: 20px;
+            text-align: center;
+        }
+
+        .sample-style-last {
+            display: inline;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.0);
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            position: relative;
+            height: 20px;
+            text-align: center;
+        }
+
+
+        @media (max-width:1600px) {
+
+            #home_cont {
+
+                margin-left: 250px;
+            }
+
+            #col_cont {
+                margin-left: 150px;
+                margin-top: -100px;
+            }
+        }
+
+        @media (max-width:800px) {
+            #home_cont {
+                margin-left: 0px;
+                margin-top: 200px;
+            }
+        }
+
+
+        @media only screen and (max-width:800px) {
+           .testimonials__slide {
+                height: 900px;
+            }
+        }
+
+
+        @media only screen and (max-width:1600px) {
+            header {
+                margin-top: -30px;
+            }
+
+            .header-menu-toggle {
+                margin-top: -30px;
+            }
+        }
+
+
+        @media only screen and (max-width:800px) {
+            header {
+                margin-top: -10px;
+            }
+
+            .header-menu-toggle {
+                margin-top: -10px;
+            }
+        }
+
+
+        @media (max-width:400px) {
+            .service-text {
+                width: 100%;
+            }
+
+            #star {
+                display: block;
+            }
+
+            #mobile-star {
+                display: block;
+            }
+
+            #spec-head {
+                font-size: 2.4rem;
+            }
+
+        }
+
+        @media (max-width:1600px) {
+          
+            .slick-prev {
+            margin-top: -50px;
+            }
+
+            .slick-next {
+                margin-top: -50px;
+            }
+        }
+
+        @media (max-width:800px) {
+            .slick-prev {
+                margin-top: -300px;
+            }
+
+            .slick-next {
+                margin-top: -300px;
+            }
+
+            .stats-tabs {
+                margin-left: 25px;
+            }
+
+        }
+
+        @media (max-width:400px) {
+
+            .service-text {
+                margin-top: 50px;
+            }
+
+            #list-name {
+                margin-left: 5px;
+            }
+
+            #list-content {
+
+                margin-left: 10px;
+                border-left: 2px solid red;
+                padding-left: 20px;
+            }
+        }
+
+        @media only screen and (max-width:800px) {
+            #cont {
+                margin-top: 2000px;
+            }
+        }
+
+        .partner_title {
+
+            font-family: 'metropolis-regular',
+            sans-serif;
+            color: black;
+            font-size: 2.8rem;
+            float: middle;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            text-align: center;
+        }
+
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+
+<!-- Resources,initializations end -->
+
+<!--       BODY       -->
+
+
+
+
+<!-- HEADER BEGINS -->
+
+<body id="top" style="overflow-x:hidden; height:780px">
+
+    <section style="  background:black; z-index:90; width:100%; position:fixed; overflow: hidden; display:block; top:0">
+        <div class="row" style="color:white;  width:100%; margin-left:auto; margin-left:30px; display:block">
+
+            <div class="col-twelve" style="display:block">
+                <ul class="stats-tabs" style="color:white">
+                    <li>
+                        <a id="sample" class="smoothscroll" href="#about" style="color:red; font-size:30px;">RZX8</a>
+                    </li>
+
+                    <li>
+                        <a id="sample" class="smoothscroll sample" href="#about" style="color:white">Achievements</a>
+                    </li>
+                    <li>
+                        <a id="sample" class="smoothscroll sample" href="#team" style="color:white">Team</a>
+                    </li>
+                    <li>
+                        <a id="sample" class="smoothscroll sample" href="#specs" style="color:white">Specs</a>
+                    </li>
+                    <li>
+                            <a id="sample" class="smoothscroll sample" href="#media" style="color:white">NEWS AND MEDIA</a>
+                        </li>
+                    <li>
+                        <a id="gal" class="sample" style="color:white; font-size:1.3rem">Gallery</a>
+                    </li>
+                    <li>
+                        <a id="sample" class="smoothscroll sample" href="#sponsors" style="color:white">Sponsors</a>
+                    </li>
+                  
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- HEADER ENDS -->
+
+
+
+
+
+
+    <!-- ACHIEVEMENTS BEGINS -->
+
+    <section id='about' class="s-about" style="margin-top:90px; width:100%; display:block; position:relative">
+
+        <div class="row">
+            <div class="col-full">
+                <h3 class="subhead">Achievements</h3>
+            </div>
+        </div>
+        <!-- end about-desc -->
+        <div class="row" style=" width:100%;">
+
+            <div class="about-process process block-1-2 block-tab-full">
+
+                <div class="process__vline-left"></div>
+
+                <div class="col-block process__col" data-item="1">
+
+                    <div class="process__text" id="comb_text" style="width:100%;">
+                        <h4>Combustion</h4>
+
+                        <p style="width:80%;">Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi
+                            adipisci. Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam
+                            temporibus quisquam vel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end process -->
+        </div>
+        <!-- end about-stats -->
+    </section>
+    <!-- end s-about -->
+
+
+    <!-- ACHIEVEMENTS ENDS -->
+
+
+
+
+
+
+    <!-- TEAM -->
+
+    <section id="team" class="s-home target-section" data-parallax="scroll" data-image-src="images/things.jpg" data-natural-width=3000
+        data-natural-height=400 data-position-y=top style="height:500px;    float:none;
+    width:100%; margin-top:-50px ">
+        <div style="width:100%; height:100%; background: linear-gradient(black,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));   position:absolute"></div>
+        <div class="home-content">
+            <section id='services' class="s-services light-gray" style="background:none; float:none; width:100% ">
+                <div style="margin-top:-50px" class="row section-header">
+                    <div class="col-full">
+                        <h3 class="subhead">Team</h3>
+                    </div>
+                </div>
+                <!-- end section-header -->
+
+
+
+                <div class="row">
+
+                    <!-- SECTION HEADER -->
+                    <div class="row">
+                      <div class="col-six tab-full">
+                            <h1 id="spec-head" style="margin-left:10px;     font-family: 'metropolis-regular', sans-serif;
+                    font-size: 3.6rem;
+                    text-transform: uppercase;
+                    text-align:center;
+                    letter-spacing: 0.4rem; margin-top:35px;">Combustion</h1>
+                        </div>
+                        <div class="lol">
+                            <div id="star" class="col-six tab-full">
+
+                                <ul class="stats-tabs" style="color:white;">
+                                    <li style="color:white">
+                                        <a style="color:red; font-size:20px;">1.4G
+                                            <em>Lateral Acceleration</em>
+                                        </a>
+                                    </li>
+                                    <li style="color:white">
+                                        <a style="color:red; font-size:20px">249kg
+                                            <em>Weight</em>
+                                        </a>
+                                    </li>
+                                    <li style="color:white">
+                                        <a style="color:red; font-size:20px" href="#">212.85 BHP/tonne
+                                            <em>Power to Weight Ratio</em>
+                                        </a>
+                                    </li>
+                                    <li style="color:white">
+                                        <a style="color:red; font-size:20px" href="#">120 kmph
+                                            <em>Top Speed</em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                </div>
+                <!-- end about-desc -->
+                <!-- SECTION HEADER ENDS -->
+
+                <div class="row services-list block-1-3 block-m-1-2 block-tab-full">
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">BODY AND TYRES</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">SUSPENSION</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">BRAKES</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">STEERING</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end services-list -->
+
+            </section>
+            <!-- end s-services -->
+            <!-- end home-content__main -->
+
+        </div>
+        <!-- end home-content -->
+
+    </section>
+
+
+
+    <!-- TEAM ENDS -->
+
+
+
+
+
+    <!-- SPECIFICATIONS -->
+
+
+    <section id="specs" class="s-home target-section" data-parallax="scroll" data-image-src="images/things.jpg" data-natural-width=3000
+        data-natural-height=400 data-position-y=top style="height:500px; margin-top:-50px;    float:none;
+width:100%; ">
+
+        <div style="width:100%; height:100%; background: linear-gradient(black,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));   position:absolute"></div>
+        <div class="home-content">
+
+            <section id='services' class="s-services light-gray" style="background:none; float:none; width:100% ">
+
+
+                <div style="margin-top:-50px" class="row section-header">
+                    <div class="col-full">
+                        <h3 class="subhead">Specs</h3>
+                    </div>
+                </div>
+                <!-- end section-header -->
+
+
+
+
+                <div class="row">
+
+<!-- SECTION HEADER -->
+                    <div class="row">
+                        <div class="col-six tab-full">
+                            <h1 id="spec-head" style="margin-left:10px;     font-family: 'metropolis-regular', sans-serif;
+                font-size: 3.6rem;
+                text-transform: uppercase;
+                text-align:center;
+                letter-spacing: 0.4rem; margin-top:35px;">Combustion</h1>
+
+                        </div>
+                        <div class="lol">
+                            <div id="star" class="col-six tab-full">
+
+                                <ul class="stats-tabs" style="color:white;">
+                                    <li style="color:white">
+                                        <a style="color:red; font-size:20px;">1.4G
+                                            <em>Lateral Acceleration</em>
+                                        </a>
+                                    </li>
+                                    <li style="color:white">
+                                        <a style="color:red; font-size:20px">249kg
+                                            <em>Weight</em>
+                                        </a>
+                                    </li>
+                                    <li style="color:white">
+                                        <a style="color:red; font-size:20px" href="#">212.85 BHP/tonne
+                                            <em>Power to Weight Ratio</em>
+                                        </a>
+                                    </li>
+                                    <li style="color:white">
+                                        <a style="color:red; font-size:20px" href="#">120 kmph
+                                            <em>Top Speed</em>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                </div>
+                <!-- end about-desc -->
+
+<!-- SECTION HEADER ENDS -->
+
+
+                <div class="row services-list block-1-3 block-m-1-2 block-tab-full">
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">BODY AND TYRES</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">SUSPENSION</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">BRAKES</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">STEERING</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-block service-item " style="font-size:20px;">
+                        <div class="service-icon service-icon--brand-identity">
+                        </div>
+                        <div class="service-text">
+                            <h3 id="list-name" class="h4">CHASSIS</h3>
+                            <p style="color:rgb(223, 217, 217);">
+
+                                <ul style="margin-left:-5px; list-style-type:none; color:rgb(241, 216, 216);">
+                                    <li style="list-style-type:none; " id="list-content">Mild steel spaceframe, arc welded, powder coated lacquer, aluminium honey comb bulk head</li>
+
+                                </ul>
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end services-list -->
+
+            </section>
+            <!-- end s-services -->
+            <!-- end home-content__main -->
+
+        </div>
+        <!-- end home-content -->
+
+    </section>
+    <div>
+
+        <!-- SPECIFICATIONS ENDS -->
+
+
+        <!-- GALLERY -->
+        <section id='gallery' class="s-works" style="background:black; margin-top:-200px;    float:unset;
+        width:100%;">
+
+            <div class="row section-header">
+                <div class="col-full">
+                    <h3 class="subhead" id = "media">NEWS AND MEDIA</h3>
+                    <h1 class="display-1" style="font-family: 'metropolis-regular', sans-serif;
+                font-size: 3.6rem;
+                text-transform: uppercase; color:white">These are some of the highlights of the project in 2018.</h1>
+<p>
+        Post media links, articles, radio, etc here.
+
+</p>
+                <h3 class="subhead">Gallery</h3>
+                </div>
+            </div>
+            <!-- end section-header -->
+
+
+            <div class="row masonry-wrap" style="z-index:900000">
+                <div class="masonry">
+
+
+                    <!-- ITEM 1 -->
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div id="sass" class="item-folio__thumb">
+                                <a href="images/rz18.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
+                                    <img src="images/rz18.jpg" srcset="images/rz18.jpg 1x, images/rz18.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Picture 1
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Description
+                                </p>
+                            </div>
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
+                                    corrupti neque nisi.</p>
+                            </div>
+
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+                    <!-- ITEM 1 ENDS -->
+
+
+
+                    <!-- ITEM 2 -->
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" title="Salad" data-size="1050x700">
+                                    <img src="images/portfolio/salad.jpg" srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Picture 2
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Description
+                                </p>
+                            </div>
+                            <span class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
+                                    corrupti neque nisi.</p>
+                            </span>
+
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+                    <!-- ITEM 2 ENDS -->
+
+
+                    <!-- ITEM 3 -->
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                    <img src="images/portfolio/woodcraft.jpg" srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x"
+                                        alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                        Picture 3
+                                </h3>
+                                <p class="item-folio__cat">
+                                   Description
+                                </p>
+                            </div>
+                            <span class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
+                                    corrupti neque nisi.</p>
+                            </span>
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                    <!-- ITEM 3 ENDS -->
+
+
+                    <!-- ITEM 4 -->
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-liberty.jpg" class="thumb-link" title="Liberty" data-size="1050x700">
+                                    <img src="images/portfolio/liberty.jpg" srcset="images/portfolio/liberty.jpg 1x, images/portfolio/liberty@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                        Picture 4
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Description
+                                </p>
+                            </div>
+                            <span class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
+                                    corrupti neque nisi.</p>
+                            </span>
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                    <!-- ITEM 4 ENDS -->
+
+
+                    <!-- ITEM 5 -->
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-fuji.jpg" class="thumb-link" title="Fuji" data-size="1050x700">
+                                    <img src="images/portfolio/fuji.jpg" srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                                </a>
+                            </div>
+
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                        Picture 5
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Description
+                                </p>
+                            </div>
+
+                            <span class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
+                                    corrupti neque nisi.</p>
+                            </span>
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+                    <!-- ITEM 5 ENDS -->
+
+                    <!-- ITEM 6 -->
+
+                    <div class="masonry__brick">
+                        <div class="item-folio">
+
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                    <img src="images/portfolio/shutterbug.jpg" srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Picture 6
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Description
+                                </p>
+                            </div>
+                            <span class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
+                                    corrupti neque nisi.</p>
+                            </span>
+                        </div>
+                        <!-- end item-folio -->
+                    </div>
+                    <!-- end masonry__brick -->
+
+
+                    <!-- ITEM 6 ENDS -->
+
+                </div>
+                <!-- end masonry -->
+            </div>
+            <!-- end masonry-wrap -->
+        </section>
+        <!-- end s-works -->
+        <script>
+        </script>
+
+        <!-- GALLERY ENDS -->
+
+
+
+
+
+        <!-- Photoswipe gallery init -->
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+                <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Photoswipe gallery ends-->
+
+
+        <!-- PARTNERS -->
+
+        <section style="background:white; margin-top:-100px;    float:unset;
+         width:100%;" id="sponsors">
+           
+            <div style="margin-left:auto; margin-right:auto; width:50%;">
+                    <h1 class="partner_title" style = " padding-top:200px">PARTNERS</h1>
+                <img src="images/combustion_sponsors.jpg" />
+
+                <h1 class="partner_title">SERVICE SPONSORS</h1>
+
+                <img src="images/combustion_services.jpg" style="padding-bottom:100px" />
+
+                <h1 class="partner_title">HYBRID</h1>
+
+                <img src="images/hybrid_main.jpg" style="padding-bottom:100px" />
+                <h1 class="partner_title">Service Sponsors</h1>
+
+                <img src="images/hybrid_service.jpg" style="padding-bottom:100px" />
+            </div>
+        </section>
+
+        <!-- PARTNERS END -->
+
+
+
+
+        <!-- page preloader -->
+
+        <div id="preloader">
+            <div id="loader">
+            </div>
+        </div>
+
+        <!-- page preloader ends -->
+
+        <!-- Scripts -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Scripts end -->
+
+
+</body>
+</html>
