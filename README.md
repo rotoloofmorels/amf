@@ -4,7 +4,7 @@ Ashwa Mobility 2018, V1.1
 Currently contains a template page for each year's prototype, specific to Combustion, Hybrid, and Electric.
 TODO:
 
-For each year, add to template:
+For each year, add to template.html:
 1. Achievements
 2. Team
 3. Specifications
@@ -13,4 +13,4 @@ For each year, add to template:
 6. Sponsor images
 
 NOTE: For now, do not disturb JS/CSS files. 
-Any additional styling to be done in index.html.
+Any additional styling to be done in template.html.
