@@ -100,11 +100,11 @@ a:active {
     outline: 0;
 }
 
-.smooth.selected {
+.side_menu_item.selected {
     color: red;
 }
 
-.smooth3.selected3 {
+.side_sub_menu_item.selected3 {
     color: red;
 }
 
@@ -1444,21 +1444,21 @@ input::-moz-focus-inner {
     /* make scrollbar transparent */
 }
 
-.smooth_title {
+.side_container {
     margin-left: -20px;
     padding-left: 80px;
     padding-top: 0px;
     margin-top: 60px;
 }
 
-.smooth_title_after {
+.side_container_after {
     margin-left: -20px;
     padding-left: 80px;
     padding-top: 0px;
     margin-top: -10px;
 }
 
-.smooth1 {
+.side_menu_link {
     color: white;
     padding-right: 200px;
     padding-bottom: 10px;
@@ -1470,7 +1470,7 @@ input::-moz-focus-inner {
     padding-left: 70px;
 }
 
-.smooth {
+.side_menu_item{
     color: white;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -1481,34 +1481,8 @@ input::-moz-focus-inner {
     z-index: 30000;
 }
 
-.smooth2:before {
-    content: counter(ctr, decimal-leading-zero) ".";
-    counter-increment: ctr;
-    font-family: "metropolis-regular", sans-serif;
-    font-size: 11px;
-    color: grey;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    left: -20px;
-    position: relative;
-    top: -1px;
-}
 
-.smooth2 {
-    color: white;
-    padding-right: 200px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    width: 100%;
-    height: 100%;
-    font-family: 'metropolis-regular';
-    font-size: 16px;
-    padding-left: 70px;
-}
-
-.header-nav.zaza {
+.header-nav.sub_menu {
     background: black;
     opacity: 0;
     z-index: -1;
@@ -1527,7 +1501,7 @@ input::-moz-focus-inner {
     margin-left: 230px;
 }
 
-.header-nav.opena {
+.header-nav.open_menu {
     width: 1200px;
     opacity: 1;
     margin-left: 230px;
@@ -1542,7 +1516,7 @@ input::-moz-focus-inner {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 85%, #080808f1 15%);
 }
 
-.header-nav.zaza3 {
+.header-nav.sub_sub_menu {
     background: black;
     width: 940px;
     z-index: -100;
@@ -1561,7 +1535,7 @@ input::-moz-focus-inner {
     margin-left: 170px;
 }
 
-.smooth3:before {
+.side_sub_menu_item:before {
     content: counter(ctr, decimal-leading-zero) ".";
     counter-increment: ctr;
     font-family: "metropolis-regular", sans-serif;
@@ -1576,7 +1550,7 @@ input::-moz-focus-inner {
     top: -1px;
 }
 
-.smooth3 {
+.side_sub_menu_item {
     color: white;
     padding-right: 200px;
     padding-bottom: 10px;
@@ -1588,7 +1562,7 @@ input::-moz-focus-inner {
     z-index: 30000;
 }
 
-.header-nav.openb {
+.header-nav.open_sub_menu{
     width: 950px;
     overflow: hidden;
     display: block;
@@ -1609,9 +1583,9 @@ body {
     z-index: 900000000;
 }
 
-.smooth1:hover,
-.smooth:hover,
-.smooth3:hover {
+.side_menu_link:hover,
+.side_menu_item:hover,
+.side_sub_menu_item:hover {
     color: red;
     cursor: pointer;
 }
@@ -1688,15 +1662,15 @@ body {
     color: red;
 }
 
-#lol:hover #zaza {
+#lol:hover #sub_menu {
     margin-right: 1200px;
 }
 
-.header-nav.saa {
+.header-nav.expand_menu {
     width: 380px;
 }
 
-.header-nav.saas {
+.header-nav.expand_menu_more {
     width: 1450px;
 }
 
@@ -1732,6 +1706,7 @@ body {
     left: 80px;
     opacity: 0;
     visibility: hidden;
+    
 }
 
 .header-nav__list {
@@ -2123,7 +2098,7 @@ body {
     display: none;
 }
 
-.header-menu-toggle.vis {
+.header-menu-toggle.visible {
     display: block;
 }
 
@@ -2197,7 +2172,7 @@ body {
     .invis {
         display: none;
     }
-    #ams {
+    #top_nav {
         display: block;
     }
     #maincontent {
@@ -2225,7 +2200,7 @@ body {
     #amf {
         display: block;
     }
-    #ams {
+    #top_nav {
         display: none;
     }
     .header-nav {
@@ -2263,7 +2238,7 @@ body {
         float: none;
         width: 100%;
     }
-    #ams {
+    #top_nav {
         display: none;
     }
     .header-menu-toggle::before {
@@ -4064,6 +4039,12 @@ li {
 
 /* MOBILE NAVIGATION */
 
+#mobile{
+
+    margin-top:-520px; overflow:scroll;  margin-left:1000px; height:100%; background:none;
+}
+
+
 #with-submenu {
     color: white;
 }
@@ -4735,6 +4716,37 @@ li {
     border: white 2px solid;
 }
 
+.blocking{
+    width:100%; height:100%; background: linear-gradient(black,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0));   position:absolute
+}
+
+#news-content{
+
+    z-index:90000; font-size:20px;   padding-left:20px;   
+                    font-family:'metropolis-regular',sans-serif;
+                    color:rgb(145, 145, 145);  width:300px; position:absolute; margin-top:140px; border-left:rgb(255, 0, 0) 1px solid; margin-left:80px
+}
+
+#newsletter_title {
+    font-family: 'metropolis-regular', sans-serif;
+    font-size: 3.8rem;
+    float: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#news-title{
+
+    z-index:90000; font-size:30px;  text-align:center;   text-transform: uppercase;
+                    font-family:'metropolis-regular',sans-serif;
+                    letter-spacing:0.2em; color:rgb(255, 255, 255);   width:350px; position:absolute; margin-left:0px;
+}
+
+
+
+
 /* READ STORY BUTTON IN NEWS SECTION ENDS */
 
 /* RECRUITMENT SECTION */
@@ -4966,3 +4978,59 @@ li {
 /* RESPONSIVE FOOTER ENDS */
 
 /* FOOTER ENDS */
+
+/* MISC STYLING */
+
+#cssmenu1 {
+    background: none;
+    position: relative;
+    float: right;
+    margin-right: 210px;
+    margin-top: 18px;
+}
+
+.s-header {
+    width: 100%;
+}
+
+#top_nav {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    box-ordinal-group: 1;
+    overflow: hidden;
+    z-index: 1000;
+    margin-left: -40px;
+    opacity: 0;
+}
+
+.header-logo {
+    z-index: 1000000;
+}
+
+
+#desktop {
+
+    margin-left: 0px;
+    width: 400px;
+    height: 970px;
+    overflow: hidden;
+    margin-top: -50px;
+    z-index: -90000;
+    background: black;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#side-menu-title {
+    padding-right: 0px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    color: red;
+    width: 1000px;
+    margin-left: 40px;
+}
+
+
+/* MISC STYLING ENDS */
