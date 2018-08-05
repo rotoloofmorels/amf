@@ -46,28 +46,28 @@ function prevNewsletter() {
 
 //Collapses first submenu in side navigation
 var firstSubmenu = function () {
-    $(".smooth").each(function () {
+    $(".side_menu_item").each(function () {
         $(this).on('click', function (e) {
 
             e.preventDefault();
             e.stopPropagation();
-            if ($(".smooth").not(this).next().hasClass("opena")) {
-                $(".smooth").next().removeClass("opena");
-                $(".smooth").removeClass("selected");
+            if ($(".side_menu_item").not(this).next().hasClass("open_menu")) {
+                $(".side_menu_item").next().removeClass("open_menu");
+                $(".side_menu_item").removeClass("selected");
 
-                $("#ams").removeClass("saa");
-                $("#ams").removeClass("saas");
-                $(".smooth3").next().removeClass("openb");
+                $("#top_nav").removeClass("expand_menu");
+                $("#top_nav").removeClass("expand_menu_more");
+                $(".side_sub_menu_item").next().removeClass("open_sub_menu");
             }
 
-            $(this).next().toggleClass("opena");
-            $("#ams").toggleClass("saa");
+            $(this).next().toggleClass("open_menu");
+            $("#top_nav").toggleClass("expand_menu");
 
-            if ($(".smooth3").next().hasClass("openb")) {
-                $(".smooth3").next().removeClass("openb");
-                $("#ams").removeClass("saa");
-                $("#ams").removeClass("saas");
-                $('.header-menu-toggle').removeClass('vis');
+            if ($(".side_sub_menu_item").next().hasClass("open_sub_menu")) {
+                $(".side_sub_menu_item").next().removeClass("open_sub_menu");
+                $("#top_nav").removeClass("expand_menu");
+                $("#top_nav").removeClass("expand_menu_more");
+                $('.header-menu-toggle').removeClass('visible');
 
             }
             $(this).toggleClass("selected");
@@ -81,19 +81,19 @@ var firstSubmenu = function () {
 var secondSubmenu = function () {
 
 
-    $(".smooth3").on('click', function (e) {
+    $(".side_sub_menu_item").on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
 
-        if ($(".smooth3").not(this).next().hasClass("openb")) {
-            $(".smooth3").next().removeClass("openb");
-            $(".smooth3").removeClass("selected3");
-            $('.header-menu-toggle').removeClass('vis');
+        if ($(".side_sub_menu_item").not(this).next().hasClass("open_sub_menu")) {
+            $(".side_sub_menu_item").next().removeClass("open_sub_menu");
+            $(".side_sub_menu_item").removeClass("selected3");
+            $('.header-menu-toggle').removeClass('visible');
         }
-        $("#ams").toggleClass("saas");
-        $(this).next().toggleClass("openb");
+        $("#top_nav").toggleClass("expand_menu_more");
+        $(this).next().toggleClass("open_sub_menu");
         $(this).toggleClass("selected3");
-        $('.header-menu-toggle').toggleClass('vis');
+        $('.header-menu-toggle').toggleClass('visible');
 
     });
 };
@@ -219,22 +219,22 @@ var preloadFadeIn = function () {
         menuTrigger.on('click', function (e) {
             e.preventDefault();
 
-            $('.header-menu-toggle').removeClass('vis');
-            $(".smooth3").next().removeClass("openb");
-            $(".smooth3").removeClass("selected3");
-            $("#ams").removeClass("saas");
+            $('.header-menu-toggle').removeClass('visible');
+            $(".side_sub_menu_item").next().removeClass("open_sub_menu");
+            $(".side_sub_menu_item").removeClass("selected3");
+            $("#top_nav").removeClass("expand_menu_more");
 
         });
         // close menu by clicking the close button
         siteBody.on('click', function (e) {
             if (!$(e.target).is('.smoothscroll, a, ul, li, #sub, #nav-icon4, .header-nav__content, .header-menu-toggle, .header-menu-toggle span,.header-menu-icon')) {
-                $("#ams").removeClass("saa");
-                $("#ams").removeClass("saas");
-                $(".smooth").next().removeClass("opena");
-                $(".smooth3").next().removeClass("openb");
-                $('.header-menu-toggle').removeClass('vis');
-                $(".smooth3").removeClass("selected3");
-                $(".smooth").removeClass("selected");
+                $("#top_nav").removeClass("expand_menu");
+                $("#top_nav").removeClass("expand_menu_more");
+                $(".side_menu_item").next().removeClass("open_menu");
+                $(".side_sub_menu_item").next().removeClass("open_sub_menu");
+                $('.header-menu-toggle').removeClass('visible');
+                $(".side_sub_menu_item").removeClass("selected3");
+                $(".side_menu_item").removeClass("selected");
             }
         });
     };
@@ -454,10 +454,10 @@ var preloadFadeIn = function () {
         var menuTrigger = $('.sample').eq(0);
         $WIN.on('scroll', function () {
             if ($WIN.scrollTop() == 0) {
-                $('#ams').css('opacity', '0');
+                $('#top_nav').css('opacity', '0');
             }
             if ($WIN.scrollTop() > 0) {
-                $('#ams').css('opacity', '1');
+                $('#top_nav').css('opacity', '1');
             }
             if ($WIN.scrollTop() < 490) {
                 $('.sample').eq(0).css('color', 'red');
